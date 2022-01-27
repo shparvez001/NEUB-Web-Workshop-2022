@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo Website</title>
+<meta name="author" content="Parvez">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-conatiner">
+  Registration Number: <input type="text" name="reg" id="reg" placeholder="2001030200**" onkeyup="calculateFees()">
+  Total Credit: <input type="text" name="cred" id="cred" placeholder="15" onkeyup="calculateFees()">
+  Failed Credits: <input type="text" name="failedCred" id="failedCred" placeholder="3" onkeyup="calculateFees()">
+  Waiver: <input type="text" name="waiver" id="waiver" placeholder="40" maxlength="3" pattern="[0-9][3]" onkeyup="calculateFees()">
+  <p><span id="output"></span></p>
+</div>
+<script type="text/javascript">
+  function calculateFees()
+  {
+    var reg=document.getElementById('reg').value;
+    var cred=document.getElementById('cred').value;
+    var failedCred=document.getElementById('failedCred').value;
+    var waiver=document.getElementById('waiver').value;
+    var calculate=true;
+    if (!waiver) {
+      waiver=0;
+    }
+    if (waiver>100) {
+      waiver=100;
+      document.getElementById('waiver').value=waiver;
+    }
+    console.log(cred+'    '+failedCred);
+    if (cred-failedCred>0) {
+      regularCredit=cred-failedCred;
+    }
+    else {
+      document.getElementById('output').innerHTML="ERROR in INPUT";
+      calculate=false;
+    }
+
+    var semesterFee=2500;
+    var libraryFee=100;
+    var labFee=1000;
+    var creditFee=1650;
+    if (calculate) {
+      var totalFees=semesterFee+libraryFee+labFee+failedCred*creditFee+regularCredit*creditFee*(100-waiver)/100;
+      document.getElementById('output').innerHTML="Total Fees: "+totalFees;
+      document.getElementById('output').innerHTML+="<br><h3>Breakdown</h3>Semester Fee="+semesterFee+"<br>Lab Fee="+labFee+"<br>Library Fee="+libraryFee+"<br>Regular Credit Fee="+(regularCredit*creditFee*(100-waiver)/100)+"<br>Failed Credit Fee="+failedCred*creditFee;
+    }
+
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo Website</title>
+<meta name="author" content="Parvez">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-container">
+  <nav id="main-nav">
+    <a href="#article-1" onclick="showArticle('article-1')">Article 1</a>
+    <a href="#article-2" onclick="showArticle('article-2')">Article 2</a>
+    <a href="#article-3" onclick="showArticle('article-3')">Article 3</a>
+  </nav>
+
+  <p><span id="output"></span></p>
+  <article class="art" id="article-1">
+    <header>
+      <h1>Article 1</h1>
+    </header>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed posuere diam. Fusce sit amet lacinia ex. Aliquam vel sem tincidunt, tincidunt magna ac, dictum neque. Sed nec lobortis felis. Ut facilisis sit amet arcu eget commodo. Nulla vestibulum mollis egestas. Nullam eros nulla, vestibulum quis placerat at, facilisis at tellus. Phasellus venenatis luctus ipsum sed malesuada. In venenatis mauris velit, eget suscipit erat malesuada aliquet. In facilisis viverra mauris sit amet lacinia. Ut nunc quam, dignissim eget finibus vitae, facilisis facilisis dui. Nam vitae enim in elit dignissim vulputate eget nec nisl. Proin a odio convallis, varius ipsum ac, vulputate sapien. Proin et porta ligula.
+
+    Fusce lacinia porttitor odio placerat porta. Donec turpis ligula, malesuada porta eros non, varius mattis neque. Cras aliquam sagittis tortor, non suscipit leo. Cras et congue erat. Nullam eget rutrum eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris convallis id nisl nec porta. Morbi a accumsan augue. Mauris dictum risus justo, id iaculis orci euismod non. Donec ultricies dictum magna ut gravida. Integer iaculis suscipit aliquam. Duis vel accumsan dolor
+    Vestibulum id risus malesuada odio mattis suscipit eget eu eros. Phasellus a risus nec dui accumsan viverra sed a eros. Donec mollis ullamcorper enim, in tristique urna sagittis ac. Nam quis nisi lacus. Nunc elementum porttitor est et posuere. Aliquam felis ante, bibendum eu turpis eu, porta tincidunt leo. Pellentesque lacus tellus, malesuada non egestas vitae, semper porta ipsum. Fusce accumsan vehicula nulla, ac dictum magna lobortis nec. Praesent id magna nec nulla auctor molestie vel et lorem. In scelerisque ligula vel faucibus volutpat.
+
+    Curabitur quis posuere ipsum, ut luctus nisi. Sed placerat, mi at fermentum tincidunt, ante felis aliquet augue, vel efficitur nisi lacus dignissim lacus. Morbi at neque semper, facilisis mauris et, aliquet nisi. Vivamus nec consectetur urna. Etiam ut fermentum magna, a laoreet nisl. Aliquam accumsan ultricies finibus. Maecenas ac maximus nisl. Aliquam aliquam consectetur risus eget venenatis. Nunc quis suscipit augue. Vestibulum convallis leo in turpis faucibus iaculis. Proin suscipit, ante et rhoncus finibus, massa risus posuere risus, ut sagittis massa nisi a magna. Suspendisse mollis, tellus at cursus interdum, ipsum quam maximus dolor, et consequat purus lectus eget neque. Donec consectetur tortor in ex finibus feugiat.
+
+    Curabitur tempor malesuada mauris non elementum. Integer eu elit et neque rhoncus feugiat. Vivamus in auctor odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis dignissim velit justo, sed volutpat elit tincidunt eget. Donec condimentum ut metus eget pellentesque. Nam sit amet rutrum metus. Nam odio urna, condimentum in sodales id, consectetur eget leo.
+
+    Sed dui nisi, aliquet eget varius sit amet, dignissim a nisi. Etiam condimentum iaculis gravida. Praesent ut sagittis nisi. In interdum dictum lectus a condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam molestie ligula magna, id rhoncus purus feugiat egestas. Vestibulum semper placerat augue, vel interdum erat pulvinar ac. Vestibulum nec enim consectetur, volutpat sapien nec, vulputate ante. Aliquam erat volutpat. Donec condimentum sit amet odio ut consectetur. Curabitur vulputate feugiat felis, sed lobortis mi vehicula a. Nunc id justo quis massa vulputate faucibus. Mauris et mi consequat, semper diam id, mattis mi.</p>
+
+  </article>
+
+  <article class="art" id="article-2">
+    <header>
+      <h1>Article 2</h1>
+    </header>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed posuere diam. Fusce sit amet lacinia ex. Aliquam vel sem tincidunt, tincidunt magna ac, dictum neque. Sed nec lobortis felis. Ut facilisis sit amet arcu eget commodo. Nulla vestibulum mollis egestas. Nullam eros nulla, vestibulum quis placerat at, facilisis at tellus. Phasellus venenatis luctus ipsum sed malesuada. In venenatis mauris velit, eget suscipit erat malesuada aliquet. In facilisis viverra mauris sit amet lacinia. Ut nunc quam, dignissim eget finibus vitae, facilisis facilisis dui. Nam vitae enim in elit dignissim vulputate eget nec nisl. Proin a odio convallis, varius ipsum ac, vulputate sapien. Proin et porta ligula.
+
+    Fusce lacinia porttitor odio placerat porta. Donec turpis ligula, malesuada porta eros non, varius mattis neque. Cras aliquam sagittis tortor, non suscipit leo. Cras et congue erat. Nullam eget rutrum eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris convallis id nisl nec porta. Morbi a accumsan augue. Mauris dictum risus justo, id iaculis orci euismod non. Donec ultricies dictum magna ut gravida. Integer iaculis suscipit aliquam. Duis vel accumsan dolor
+    Vestibulum id risus malesuada odio mattis suscipit eget eu eros. Phasellus a risus nec dui accumsan viverra sed a eros. Donec mollis ullamcorper enim, in tristique urna sagittis ac. Nam quis nisi lacus. Nunc elementum porttitor est et posuere. Aliquam felis ante, bibendum eu turpis eu, porta tincidunt leo. Pellentesque lacus tellus, malesuada non egestas vitae, semper porta ipsum. Fusce accumsan vehicula nulla, ac dictum magna lobortis nec. Praesent id magna nec nulla auctor molestie vel et lorem. In scelerisque ligula vel faucibus volutpat.
+    <img src="images/bdmap-.jpg" alt="MAp of bangladesh">
+    Curabitur quis posuere ipsum, ut luctus nisi. Sed placerat, mi at fermentum tincidunt, ante felis aliquet augue, vel efficitur nisi lacus dignissim lacus. Morbi at neque semper, facilisis mauris et, aliquet nisi. Vivamus nec consectetur urna. Etiam ut fermentum magna, a laoreet nisl. Aliquam accumsan ultricies finibus. Maecenas ac maximus nisl. Aliquam aliquam consectetur risus eget venenatis. Nunc quis suscipit augue. Vestibulum convallis leo in turpis faucibus iaculis. Proin suscipit, ante et rhoncus finibus, massa risus posuere risus, ut sagittis massa nisi a magna. Suspendisse mollis, tellus at cursus interdum, ipsum quam maximus dolor, et consequat purus lectus eget neque. Donec consectetur tortor in ex finibus feugiat.
+
+    Curabitur tempor malesuada mauris non elementum. Integer eu elit et neque rhoncus feugiat. Vivamus in auctor odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis dignissim velit justo, sed volutpat elit tincidunt eget. Donec condimentum ut metus eget pellentesque. Nam sit amet rutrum metus. Nam odio urna, condimentum in sodales id, consectetur eget leo.
+
+    Sed dui nisi, aliquet eget varius sit amet, dignissim a nisi. Etiam condimentum iaculis gravida. Praesent ut sagittis nisi. In interdum dictum lectus a condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam molestie ligula magna, id rhoncus purus feugiat egestas. Vestibulum semper placerat augue, vel interdum erat pulvinar ac. Vestibulum nec enim consectetur, volutpat sapien nec, vulputate ante. Aliquam erat volutpat. Donec condimentum sit amet odio ut consectetur. Curabitur vulputate feugiat felis, sed lobortis mi vehicula a. Nunc id justo quis massa vulputate faucibus. Mauris et mi consequat, semper diam id, mattis mi.</p>
+
+  </article>
+
+  <article class="art" id="article-3">
+    <header>
+      <h1>Article 3</h1>
+    </header>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed posuere diam. Fusce sit amet lacinia ex. Aliquam vel sem tincidunt, tincidunt magna ac, dictum neque. Sed nec lobortis felis. Ut facilisis sit amet arcu eget commodo. Nulla vestibulum mollis egestas. Nullam eros nulla, vestibulum quis placerat at, facilisis at tellus. Phasellus venenatis luctus ipsum sed malesuada. In venenatis mauris velit, eget suscipit erat malesuada aliquet. In facilisis viverra mauris sit amet lacinia. Ut nunc quam, dignissim eget finibus vitae, facilisis facilisis dui. Nam vitae enim in elit dignissim vulputate eget nec nisl. Proin a odio convallis, varius ipsum ac, vulputate sapien. Proin et porta ligula.
+
+    Curabitur tempor malesuada mauris non elementum. Integer eu elit et neque rhoncus feugiat. Vivamus in auctor odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis dignissim velit justo, sed volutpat elit tincidunt eget. Donec condimentum ut metus eget pellentesque. Nam sit amet rutrum metus. Nam odio urna, condimentum in sodales id, consectetur eget leo.
+
+    Sed dui nisi, aliquet eget varius sit amet, dignissim a nisi. Etiam condimentum iaculis gravida. Praesent ut sagittis nisi. In interdum dictum lectus a condimentum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam molestie ligula magna, id rhoncus purus feugiat egestas. Vestibulum semper placerat augue, vel interdum erat pulvinar ac. Vestibulum nec enim consectetur, volutpat sapien nec, vulputate ante. Aliquam erat volutpat. Donec condimentum sit amet odio ut consectetur. Curabitur vulputate feugiat felis, sed lobortis mi vehicula a. Nunc id justo quis massa vulputate faucibus. Mauris et mi consequat, semper diam id, mattis mi.</p>
+
+  </article>
+</div>
+
+<script type="text/javascript">
+  var x=5;
+  var y=6;
+  var z=x+y;
+  //Outputs in javascript
+  /*
+  innerHTML
+  document.write()
+  window.alert()
+  console.log();
+  */
+  //window.alert('The value of x+y is'+z);
+  var output=document.getElementById("output");
+  //output.innerHTML='The value of x+y is'+z;
+var lastArticle=0;
+function showArticle(articleNo)
+{
+  if (lastArticle) {
+    document.getElementById(lastArticle).style="display:none";
+  }
+  document.getElementById(articleNo).style="display:block";
+  lastArticle=articleNo;
+}
+
+</script>
+
+</body>
+</html>

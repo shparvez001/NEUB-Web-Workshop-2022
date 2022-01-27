@@ -1,0 +1,39 @@
+body{
+  /*background-image: url(images/bdmap-.jpg);*/
+  background-color:aliceblue;
+}
+h1{
+  font-size: 60px;
+  text-align: center;
+  color: #a0c11b;
+}
+.h1v2{
+  color: blue;
+}
+
+#h1v3{
+  color: red;
+  text-align: left;
+}
+.main-container{
+  background-color: aliceblue;
+  opacity: 90%;
+  color: purple;
+  padding:20px;
+  text-align: justify;
+  border-radius: 10px;
+}
+
+#main-nav{
+  display: block;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  background-color:aliceblue;
+  width:95%;
+  padding:5px;
+}
+
+.art{
+  display: none;
+}
