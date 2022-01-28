@@ -1,0 +1,14 @@
+Practice Suggestion
+
+1. Generating common shapes (Triangle, rectangle) using text.
+2. Sorting array
+3. FizzBuzz
+4. Finding fibonacci series
+5. Finding sum of n numbers
+
+
+FizzBuzz
+1-100
+3 or its multiple - replace the number with Fizz
+5 or its multiple - replace the number with Buzz
+if number is multiple of both 3 and 5 - replace the number with FizzBuzz
